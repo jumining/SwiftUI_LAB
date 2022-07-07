@@ -15,6 +15,8 @@
 		6F0FB7E128771E5C00C390DD /* SwiftUI_LABUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F0FB7E028771E5C00C390DD /* SwiftUI_LABUITests.swift */; };
 		6F0FB7E328771E5C00C390DD /* SwiftUI_LABUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F0FB7E228771E5C00C390DD /* SwiftUI_LABUITestsLaunchTests.swift */; };
 		6F0FB7F62877207C00C390DD /* Ex+View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F0FB7F52877207C00C390DD /* Ex+View.swift */; };
+		6F8FE68A287722C300F765C0 /* ColorPickerContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F8FE689287722C300F765C0 /* ColorPickerContentView.swift */; };
+		6F8FE68C287722EA00F765C0 /* ColorCirclesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F8FE68B287722EA00F765C0 /* ColorCirclesView.swift */; };
 		6F8FE68E287723A800F765C0 /* Ex+Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F8FE68D287723A800F765C0 /* Ex+Color.swift */; };
 /* End PBXBuildFile section */
 
@@ -47,6 +49,8 @@
 		6F0FB7E028771E5C00C390DD /* SwiftUI_LABUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_LABUITests.swift; sourceTree = "<group>"; };
 		6F0FB7E228771E5C00C390DD /* SwiftUI_LABUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_LABUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		6F0FB7F52877207C00C390DD /* Ex+View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ex+View.swift"; sourceTree = "<group>"; };
+		6F8FE689287722C300F765C0 /* ColorPickerContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPickerContentView.swift; sourceTree = "<group>"; };
+		6F8FE68B287722EA00F765C0 /* ColorCirclesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorCirclesView.swift; sourceTree = "<group>"; };
 		6F8FE68D287723A800F765C0 /* Ex+Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ex+Color.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -126,6 +130,7 @@
 			isa = PBXGroup;
 			children = (
 				6F0FB7C728771E5B00C390DD /* ContentView.swift */,
+				6F8FE688287722A400F765C0 /* CustomColorPicker */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -163,6 +168,15 @@
 				6F0FB7CC28771E5C00C390DD /* Preview Assets.xcassets */,
 			);
 			path = Assets;
+			sourceTree = "<group>";
+		};
+		6F8FE688287722A400F765C0 /* CustomColorPicker */ = {
+			isa = PBXGroup;
+			children = (
+				6F8FE689287722C300F765C0 /* ColorPickerContentView.swift */,
+				6F8FE68B287722EA00F765C0 /* ColorCirclesView.swift */,
+			);
+			path = CustomColorPicker;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -295,8 +309,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6F8FE68C287722EA00F765C0 /* ColorCirclesView.swift in Sources */,
 				6F0FB7C828771E5B00C390DD /* ContentView.swift in Sources */,
 				6F0FB7F62877207C00C390DD /* Ex+View.swift in Sources */,
+				6F8FE68A287722C300F765C0 /* ColorPickerContentView.swift in Sources */,
 				6F8FE68E287723A800F765C0 /* Ex+Color.swift in Sources */,
 				6F0FB7C628771E5B00C390DD /* SwiftUI_LABApp.swift in Sources */,
 			);
@@ -458,7 +474,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"SwiftUI_LAB/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"SwiftUI_LAB/Configuration/Assets\"";
 				DEVELOPMENT_TEAM = 3FAK98S72C;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -487,7 +503,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"SwiftUI_LAB/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"SwiftUI_LAB/Configuration/Assets\"";
 				DEVELOPMENT_TEAM = 3FAK98S72C;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
