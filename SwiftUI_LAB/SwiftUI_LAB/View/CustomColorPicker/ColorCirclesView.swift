@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ColorCirclesView: View {
   
-  @Binding var selection: String
+  @Binding var selectedColor: String
   
   var body: some View {
     
@@ -25,7 +25,7 @@ struct ColorCirclesView: View {
     LazyVGrid(columns: Array(repeating: GridItem(.flexible(minimum: 28)), count: 6)) {
       ForEach(colors, id: \.self) { color in
         Circle()
-        // Color(hex: ) : Ex+Color에 추가되어있음
+        /// Color(hex: ) : Ex+Color에 추가되어있음
           .foregroundColor(Color(hex: color))
           .overlay(
             Circle()
@@ -37,10 +37,10 @@ struct ColorCirclesView: View {
               .stroke(.black.opacity(0.05), lineWidth: 1)
           )
           .frame(width: 28, height: 28)
-        // highlightColor : Ex+View에 추가되어있음
-          .highlightColor(lineWidth: selection == color ? 4 : 0)
+        /// highlightColor : Ex+View에 추가되어있음
+          .highlightColor(lineWidth: selectedColor == color ? 4 : 0)
           .onTapGesture {
-            selection = color
+            selectedColor = color
           }
       }
     }
