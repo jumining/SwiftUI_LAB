@@ -8,14 +8,20 @@
 import SwiftUI
 
 struct ContentView: View {
-    var body: some View {
-        Text("Hello, world!")
-            .padding()
+  var body: some View {
+    NavigationView {
+      List {
+        NavigationLink(destination: ColorPickerContentView()) {
+          Text("커스텀 Color Picker")
+        }
+      }
+      .navigationBarTitle("SwiftUI 실험실")
     }
+  }
 }
 
 struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
-    }
+  static var previews: some View {
+    ContentView()
+  }
 }
