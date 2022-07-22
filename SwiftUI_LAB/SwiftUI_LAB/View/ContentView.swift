@@ -14,6 +14,9 @@ struct ContentView: View {
         NavigationLink(destination: ColorPickerContentView()) {
           Text("커스텀 Color Picker")
         }
+        NavigationLink(destination: ProfileContentView()) {
+          Text("API 통신으로 랜덤 유저 프로필")
+        }
       }
       .navigationBarTitle("SwiftUI 실험실")
     }
