@@ -15,7 +15,11 @@ struct MemoListView: View {
   var body: some View {
     NavigationView {
       List(store.list) { memo in
-        MemoCell(memo: memo)
+        NavigationLink {
+          DetailView(memo: memo)
+        } label: {
+          MemoCell(memo: memo)
+        }
       }
       .listStyle(.plain)
       .navigationTitle("내 메모")
@@ -29,7 +33,7 @@ struct MemoListView: View {
       .sheet(isPresented: $showComposer) {
         ComposeView()
       }
-    }
+    }.navigationBarHidden(true)
   }
 }
 
