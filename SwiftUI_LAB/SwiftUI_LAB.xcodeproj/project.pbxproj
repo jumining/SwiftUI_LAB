@@ -18,6 +18,7 @@
 		6F347EB32894E9B5005329DE /* MemoListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F347EB22894E9B5005329DE /* MemoListView.swift */; };
 		6F347EB62894EA29005329DE /* Memo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F347EB52894EA29005329DE /* Memo.swift */; };
 		6F347EB82894EA8C005329DE /* MemoStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F347EB72894EA8C005329DE /* MemoStore.swift */; };
+		6F347EBA2894F0A9005329DE /* MemoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F347EB92894F0A9005329DE /* MemoCell.swift */; };
 		6F809432288B3D2400CD12F8 /* OAuthContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F809431288B3D2400CD12F8 /* OAuthContentView.swift */; };
 		6F809434288B3D7300CD12F8 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F809433288B3D7300CD12F8 /* LoginView.swift */; };
 		6F809436288B3D7E00CD12F8 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F809435288B3D7E00CD12F8 /* RegisterView.swift */; };
@@ -79,6 +80,7 @@
 		6F347EB22894E9B5005329DE /* MemoListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoListView.swift; sourceTree = "<group>"; };
 		6F347EB52894EA29005329DE /* Memo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Memo.swift; sourceTree = "<group>"; };
 		6F347EB72894EA8C005329DE /* MemoStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoStore.swift; sourceTree = "<group>"; };
+		6F347EB92894F0A9005329DE /* MemoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoCell.swift; sourceTree = "<group>"; };
 		6F809431288B3D2400CD12F8 /* OAuthContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OAuthContentView.swift; sourceTree = "<group>"; };
 		6F809433288B3D7300CD12F8 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		6F809435288B3D7E00CD12F8 /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
@@ -232,8 +234,9 @@
 		6F347EB12894E9A7005329DE /* Memo */ = {
 			isa = PBXGroup;
 			children = (
-				6F347EB42894EA1F005329DE /* Model */,
 				6F347EB22894E9B5005329DE /* MemoListView.swift */,
+				6F347EBB2894F108005329DE /* SubViews */,
+				6F347EB42894EA1F005329DE /* Model */,
 				6F347EB72894EA8C005329DE /* MemoStore.swift */,
 			);
 			path = Memo;
@@ -245,6 +248,14 @@
 				6F347EB52894EA29005329DE /* Memo.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		6F347EBB2894F108005329DE /* SubViews */ = {
+			isa = PBXGroup;
+			children = (
+				6F347EB92894F0A9005329DE /* MemoCell.swift */,
+			);
+			path = SubViews;
 			sourceTree = "<group>";
 		};
 		6F809430288B3D0000CD12F8 /* OAuth */ = {
@@ -469,6 +480,7 @@
 				6F809443288C2F4200CD12F8 /* APIClient.swift in Sources */,
 				6F347EB82894EA8C005329DE /* MemoStore.swift in Sources */,
 				6FB4243F2889547200006958 /* ProfileContentView.swift in Sources */,
+				6F347EBA2894F0A9005329DE /* MemoCell.swift in Sources */,
 				6F0FB7C828771E5B00C390DD /* ContentView.swift in Sources */,
 				6F80943A288B3D9500CD12F8 /* ProfileView.swift in Sources */,
 				6F80944D288C439000CD12F8 /* TokenData.swift in Sources */,
