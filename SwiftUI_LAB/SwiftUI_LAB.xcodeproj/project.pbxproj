@@ -19,6 +19,7 @@
 		6F347EB62894EA29005329DE /* Memo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F347EB52894EA29005329DE /* Memo.swift */; };
 		6F347EB82894EA8C005329DE /* MemoStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F347EB72894EA8C005329DE /* MemoStore.swift */; };
 		6F347EBA2894F0A9005329DE /* MemoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F347EB92894F0A9005329DE /* MemoCell.swift */; };
+		6F347EBD2894F151005329DE /* ComposeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F347EBC2894F151005329DE /* ComposeView.swift */; };
 		6F809432288B3D2400CD12F8 /* OAuthContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F809431288B3D2400CD12F8 /* OAuthContentView.swift */; };
 		6F809434288B3D7300CD12F8 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F809433288B3D7300CD12F8 /* LoginView.swift */; };
 		6F809436288B3D7E00CD12F8 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F809435288B3D7E00CD12F8 /* RegisterView.swift */; };
@@ -81,6 +82,7 @@
 		6F347EB52894EA29005329DE /* Memo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Memo.swift; sourceTree = "<group>"; };
 		6F347EB72894EA8C005329DE /* MemoStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoStore.swift; sourceTree = "<group>"; };
 		6F347EB92894F0A9005329DE /* MemoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoCell.swift; sourceTree = "<group>"; };
+		6F347EBC2894F151005329DE /* ComposeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComposeView.swift; sourceTree = "<group>"; };
 		6F809431288B3D2400CD12F8 /* OAuthContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OAuthContentView.swift; sourceTree = "<group>"; };
 		6F809433288B3D7300CD12F8 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		6F809435288B3D7E00CD12F8 /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
@@ -254,6 +256,7 @@
 			isa = PBXGroup;
 			children = (
 				6F347EB92894F0A9005329DE /* MemoCell.swift */,
+				6F347EBC2894F151005329DE /* ComposeView.swift */,
 			);
 			path = SubViews;
 			sourceTree = "<group>";
@@ -494,6 +497,7 @@
 				6F80943C288B40A300CD12F8 /* UserData.swift in Sources */,
 				6F809453288C470000CD12F8 /* UserDefaultsManager.swift in Sources */,
 				6F809434288B3D7300CD12F8 /* LoginView.swift in Sources */,
+				6F347EBD2894F151005329DE /* ComposeView.swift in Sources */,
 				6F8FE68E287723A800F765C0 /* Ex+Color.swift in Sources */,
 				6F0FB7C628771E5B00C390DD /* SwiftUI_LABApp.swift in Sources */,
 			);
