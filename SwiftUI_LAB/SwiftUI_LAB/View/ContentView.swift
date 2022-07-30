@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct ContentView: View {
+  @StateObject var store = MemoStore()
+  
   var body: some View {
     NavigationView {
       List {
@@ -16,6 +18,12 @@ struct ContentView: View {
         }
         NavigationLink(destination: ProfileContentView()) {
           Text("API 통신으로 랜덤 유저 프로필")
+        }
+        NavigationLink(destination: OAuthContentView().environmentObject(UserVM())) {
+          Text("OAuth 로그인, 회원가입")
+        }
+        NavigationLink(destination: MemoListView().environmentObject(store)) {
+          Text("메모앱 만들기")
         }
       }
       .navigationBarTitle("SwiftUI 실험실")
